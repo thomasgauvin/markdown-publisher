@@ -44,7 +44,7 @@ export default async function handleRequest(
   responseHeaders.set("Referrer-Policy", "strict-origin-when-cross-origin");
   responseHeaders.set(
     "Content-Security-Policy",
-    "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'"
+    "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://counterscale.tomsprojects.workers.dev"
   );
   
   return new Response(body, {
