@@ -89,11 +89,7 @@
 
 html,
 body {
-  @apply bg-gray-50 dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  @apply bg-gray-50;
 }
 
 /* Custom prose styles for markdown content */
